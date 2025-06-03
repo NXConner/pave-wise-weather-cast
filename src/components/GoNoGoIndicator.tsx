@@ -35,7 +35,7 @@ const GoNoGoIndicator = ({ task }: GoNoGoIndicatorProps) => {
           borderColor: 'border-green-200',
           textColor: 'text-green-800',
           icon: CheckCircle,
-          title: 'GO',
+          title: 'GOOD-TO-GO',
           message: 'Conditions are favorable for this task'
         };
       case 'caution':
@@ -84,7 +84,7 @@ const GoNoGoIndicator = ({ task }: GoNoGoIndicatorProps) => {
       </CardHeader>
       <CardContent className="text-center">
         <div className={`inline-flex items-center justify-center w-24 h-24 rounded-full bg-${config.color}-100 mb-4`}>
-          <span className={`text-3xl font-bold text-${config.color}-700`}>
+          <span className={`text-2xl font-bold text-${config.color}-700`}>
             {config.title}
           </span>
         </div>
